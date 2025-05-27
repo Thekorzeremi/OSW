@@ -1,4 +1,4 @@
-# OSW - Open Source Workspaces
+# YOWIH - Your Own Workspace Independently Host
 Open-source suite of workspace apps. Backend made in NodeJS and Apps made in Flutter.
 ## Needed
 - Nodemon
