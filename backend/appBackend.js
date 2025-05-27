@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 const apiPort = process.env.API_PORT;
 const apiURI = process.env.API_URI;
-// const secretKey = process.env.API_SECRET_KEY;
+const secretKey = process.env.API_SECRET_KEY;
 
 app.get('/', (req, res) => {
     return res.json("Hello world ! OSW API is listening you ! Please authentificate with /authentification. You need help ? Just get /help.")
