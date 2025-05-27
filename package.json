@@ -1,0 +1,20 @@
+{
+  "name": "osw",
+  "version": "1.0.0",
+  "description": "OSW (Open Source Workspace) is an open-source alternative to Google Workspaces",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "Thekorzeremi",
+  "type": "commonjs",
+  "main": "backend/appBackend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "5.1.0",
+    "jsonwebtoken": "9.0.2",
+    "body-parser": "2.2.0",
+    "dotenv": "16.5.0"
+  }
+}
