@@ -6,18 +6,18 @@
     Not responsible of data lose
 */
 
-const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
+const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 // const { MongoClient } = require('mongodb');
 
-require('dotenv').config({ path: '.env.local' });
+require("dotenv").config({ path: ".env.local" });
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-require('./controllers/helperController')(app);
+require("./controllers/helperController")(app);
 
 const apiPort = process.env.API_PORT;
 const apiURI = process.env.API_URI;
@@ -27,5 +27,5 @@ const apiURI = process.env.API_URI;
 // const mClient = new MongoClient(dbURI);
 
 app.listen(apiPort, () => {
-    console.log(`OSW API listening on ${apiURI}:${apiPort}`);
+  console.log(`YOWIH API listening on ${apiURI}:${apiPort}`);
 });

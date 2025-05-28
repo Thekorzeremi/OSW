@@ -7,16 +7,16 @@
 */
 
 module.exports = (app) => {
-    app.get('/', (req, res) => {
-        return res
-            .json("Hello world ! OSW API is listening you ! Please authentificate with /authentification. You need help ? Just get /help.");
-    });
+  app.get("/", (req, res) => {
+    return res.json(
+      "Hello world ! YOWIH API is listening you ! Please authentificate with /authentification. You need help ? Just get /help."
+    );
+  });
 
-    app.get('/help', (req, res) => {
-        return res
-            .type('html')
-            .json(`
+  app.get("/help", (req, res) => {
+    return res.type("html").json(`
                 <h1>API HELP</h1>
+                <h2>Welcome to YOWIH API ! It works !</h2>
                 <h3>Version 1.0.0</h3><p>Here are the current supported API endpoint</p>
                 <h3>Authentification</h3>
                 <ul>
@@ -32,5 +32,5 @@ module.exports = (app) => {
                     <li><b>/status/:app</b> : Get all information status of an app thanks to a parameter in the query. Need a valid token.</li>
                 </ul>
         `);
-    });
-}
+    })
+};
