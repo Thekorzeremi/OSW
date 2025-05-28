@@ -1,5 +1,6 @@
 # YOWIH - Your Own Workspace Independently Host
 Open-source suite of workspace apps. Backend made in NodeJS and Apps made in Flutter.
+Firstly, project in js and after in tsx.
 ## Needed
 - Nodemon
 ## Warning
@@ -10,6 +11,8 @@ Here are the goals of this project :
 - Be able to host your own data (On your own risks)
 - Learn how to develop a resiliant ecosystem of apps
 - Have fun !
+- No use of AI but documentation and forum allowed
+- Production standard and production ready
 ## Architecture
 ### Frontend
 Flutter apps in Dart

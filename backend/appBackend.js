@@ -1,5 +1,7 @@
 /* 
-    appBackend.js by Thekorzeremi - 2025/05/27
+    appBackend.js by Thekorzeremi 
+    Created_on 2025/05/27 - 11:00pm
+    Updated_on 2025/05/28 - 7:51am
     Only made for personal usage
     Not responsible of data lose
 */
@@ -8,6 +10,7 @@ const express = require('express');
 // const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const { MongoClient } = require('mongodb');
 
 require('dotenv').config({ path: '.env.local' });
 
@@ -17,7 +20,10 @@ app.use(bodyParser.json());
 
 const apiPort = process.env.API_PORT;
 const apiURI = process.env.API_URI;
+const dbURI = process.env.DB_URI;
 const secretKey = process.env.API_SECRET_KEY;
+
+const mClient = new MongoClient(dbURI);
 
 app.get('/', (req, res) => {
     return res.json("Hello world ! OSW API is listening you ! Please authentificate with /authentification. You need help ? Just get /help.")
